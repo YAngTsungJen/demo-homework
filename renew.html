@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+    <link rel="stylesheet" href="renew.css">
+</head>
+<style>
+    .wrap{
+        margin: 0 auto;
+        max-width: 1024px;
+        display: flex;
+        justify-content: center;
+    }
+    .outer{
+        padding: 30px;
+        margin: 0 auto;
+        width: 600px;
+        background: yellowgreen;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .inner h2{
+        color: red;
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    .inner input{
+        margin-bottom: 3px;
+    }
+    .button{
+        background: wheat;
+        color: tomato;
+    }
+    .button:hover{
+        background: tomato;
+        color: wheat;
+        cursor: pointer;
+    }
+    .inner h3{
+        margin: 3px;
+        font-size: 20px;
+        }
+    .list{
+        background: pink;
+        height: auto;
+    }
+    .list li{
+        padding: 10px;
+        margin: 3px;
+    }
+    
+</style>
+<body>
+    <div class="wrap">
+        <div class="outer">
+            <div class="inner">
+                <h2>代辦事項</h2>
+                <input type="text" id="input">
+                <button class="button">新增</button>
+                <div>
+                    <h3>還有 <span id="task"></span> 筆任務</h3>
+                    <button class="deleteAll">清除所有任務</button>
+                </div>
+                <ul class="list"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="renew.js"></script>
+</body>
+</html>
